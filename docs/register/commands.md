@@ -12,10 +12,16 @@
             self.register_user(user_name='chinse_teacher', http_authorization='Bearer xxx', user_id=1,
                                         user_types='teacher,chinse_teacher')
             self.english_teacher.get('/v1/students/')
+            
              
 使用 register_user 注册用户。
 
 注册完之后，可以使用 self.{user_name} 进行 post or get 操作， token 使用的是 http_authorization
+
+### 匿名用户访问
+    self.anonymous.get('/v1/students/')
+
+初始化的时候，会自动生成一个无 http_authorization 的用户
 
 ### 获得不同类型的用户
 
@@ -23,4 +29,9 @@
     >>> [ APIClient('english_teacher'),  APIClient('chinse_teacher'),  ]
     chinse_teachers = self.get_users_by_user_type(user_types='chinse_teacher')
     >>> [ APIClient('chinse_teacher'),  ]
+
+### 获得所有的类型的用户
+
+    all_users = self.registered_users()
+    >>> [ APIClient('english_teacher'),  APIClient('chinse_teacher'),  APIClient('anonymous'),  ]
 
