@@ -21,3 +21,4 @@
 ====================================
   * [register](register/commands.md)
   * [unauthorized](unauthorized/commands.md)
+  * [forbidden](forbidden/commands.md)

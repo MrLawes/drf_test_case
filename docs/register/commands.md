@@ -9,8 +9,9 @@
         def test_cases(self):
             self.register_user(user_name='english_teacher', http_authorization='Bearer xxx', user_id=1,
                                         user_types='teacher,english_teacher')
-            self.register_user(user_name='chinse_teacher', http_authorization='Bearer xxx', user_id=1,
+            self.register_user(user_name='chinse_teacher', http_authorization='Bearer xxx', user_id=2,
                                         user_types='teacher,chinse_teacher')
+                                        
             self.english_teacher.get('/v1/students/')
             
              
