@@ -8,12 +8,12 @@
                                 user_types='student,class_1_student')
                                 
     self.set_forbidden(
-        path='/v1/teacher/', method='GET',
+        path='/v1/teacher/{pk}/', method='GET',
         exclude_auth_user=[self.testcase.class_1_student, ]
     )
               
     self.set_forbidden(
-        path='/v1/teacher/', method='GET',
+        path='/v1/teacher/{pk}/', method='GET',
         exclude_auth_user=self.get_users_by_user_type(user_types='student'),
     )
 
@@ -21,7 +21,7 @@
 
 ### 免 Forbidden 检测
 
-    self.add_forbidden_ignore(endpoint='/v1/teacher/:GET')
+    self.add_forbidden_ignore(endpoint='/v1/teacher/{pk}/:GET')
 
 该端点不会进行 Forbidden 检测
 
