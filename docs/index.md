@@ -20,3 +20,4 @@
 快速上手
 ====================================
   * [register](register/commands.md)
+  * [unauthorized](unauthorized/commands.md)
