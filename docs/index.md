@@ -6,5 +6,17 @@
     
  快速安装
 ===================
-    pip install drf_test_case
+    pip install drf-test-case
+
+使用方法
+====================================
+    from drf_test_case.test import UserAPITestCase
+
+    class Test(UserAPITestCase):
     
+        def test_cases(self):
+            pass
+            
+快速上手
+====================================
+  * [register](register/commands.md)
