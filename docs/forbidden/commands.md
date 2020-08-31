@@ -9,7 +9,7 @@
                                 
     self.set_forbidden(
         path='/v1/teacher/{pk}/', method='GET',
-        exclude_auth_user=[self.testcase.class_1_student, ]
+        exclude_auth_user=[self.class_1_student, ]
     )
               
     self.set_forbidden(
