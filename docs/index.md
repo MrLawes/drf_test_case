@@ -19,6 +19,7 @@
             
 快速上手
 ====================================
-  * [register](register/commands.md)
+  * [注册用户](register/commands.md)
   * [unauthorized](unauthorized/commands.md)
   * [forbidden](forbidden/commands.md)
+  * [not_found](not_found/commands.md)
