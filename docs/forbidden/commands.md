@@ -28,5 +28,5 @@
 ### Forbidden 检测
     self.is_valid_for_forbidden()
     
-遍历所有的端点, 进行 forbidden 检测。
+通过所有注册的用户，遍历所有的端点, 进行 forbidden 检测。
 

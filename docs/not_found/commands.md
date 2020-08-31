@@ -23,5 +23,5 @@
 ### not_found 检测
     self.is_valid_for_not_found()
     
-遍历所有的端点, 进行 not_found 检测。
+通过所有注册的用户，遍历所有的端点, 进行 not_found 检测。
 
